@@ -1,22 +1,19 @@
 import java.util.Scanner; //declare for the import user
 
 public class SimpleCalculator{
-
 public static void main(String[] args) {
-    String choice;
+    String choice; //declaring a string here
     Scanner input = new Scanner(System.in); //using scanner input to declare that you wanted to input a string or a number.
-    do {
-        int total;
-
-
-        System.out.print("Enter the first number: "); //Entering name
-        int firstNum = input.nextInt(); //Integer save for now.
+    do { //why do? Because you wanted a loop here in the condition.
+        int total; // since I wanted a whole total to used, instead of boolean.
+        System.out.print("Enter the first number: "); //Entering first number.
+        int firstNum = input.nextInt(); //inputed integer save for now.
 
         System.out.print("Enter the operator(+,-,/,*): "); // This is showing what operator should be use.
-        String operator = input.next(); //saving the operator that use.
+        String operator = input.next(); //saving the operator that you wanted to use.
 
-        System.out.print("Enter the second number: "); // Showing to be inputed your second number
-        int secondNum = input.nextInt(); // saving what second number that you wanted to use.
+        System.out.print("Enter the second number: "); // Showing to be inputed your second number.
+        int secondNum = input.nextInt(); // saving what second number that you wanted to use (int = whole number).
 
         // calculation on getting the total number
         if (operator.equals("+")) {
