@@ -23,10 +23,26 @@ public class ToDoListApp {
 
                 do{
                     System.out.print("Do you want to continue? (Yes or no)");
-                    returnFromTheStart = input.nextLine();
+                    //returnFromTheStart = input.nextLine();
+                    if (returnFromTheStart.equals("Yes")){
+                        System.print.outln("Staying first");
+                    }else if (returnFromTheStart.equals("No")){
+                        System.print.outln("Exiting...."))
+                    }
+
+                    else {
+                        System.print.outln("You need to choose.");
+                    }
+
+
 
                     //if (returnFromTheStart.equals("Yes"))
-                }
+                } while (returnFromTheStart.equals("No"));
+                System.print.outln("Okay you're out");
+
+
+
+
 
             }else if (choices == 2){
                 System.out.println("Enter new task: ");
